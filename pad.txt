@@ -1,0 +1,246 @@
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop
+$ cd turma_11
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ touch ped.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ mkdir 1 2
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ mv ped.txt 1
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ mv ped ../
+mv: cannot stat 'ped': No such file or directory
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ cd 1
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ mv ../ ped.txt
+mv: cannot overwrite non-directory 'ped.txt' with directory '../'
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ mv ./ ped.txt
+mv: cannot overwrite non-directory 'ped.txt' with directory './'
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ ls
+ped.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ mv ped.txt ../
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ cd ..
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ mv ped.txt 2
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ cd 2
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ ls
+ped.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ mv ped.txt ../
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ cd ../
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ mkdir 3
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ ls
+1/  2/  3/  ped.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ rm ped.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ ls
+1/  2/  3/
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ cd 1
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ ped.txt
+bash: ped.txt: command not found
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ touch ped.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ ls
+ped.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ mv ped.txt 2
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ cd ..
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ cd 2
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ rm ped.txt
+rm: cannot remove 'ped.txt': No such file or directory
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ ls
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ cd..
+bash: cd..: command not found
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ cd ..
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ cd 1
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ ls
+2
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ rm 2
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ touch ped.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ mv 2 ped.txt
+mv: cannot stat '2': No such file or directory
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ mv 2 / ped.txt
+mv: target 'ped.txt' is not a directory
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ mv ped.txt/2
+mv: missing destination file operand after 'ped.txt/2'
+Try 'mv --help' for more information.
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ mv 2/ped.txt
+mv: missing destination file operand after '2/ped.txt'
+Try 'mv --help' for more information.
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ mv ped.txt ../
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ dc ..
+bash: dc: command not found
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/1
+$ cd ..
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ ls
+1/  2/  3/  ped.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ mv ped.txt 2
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ cd 2
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ ls
+ped.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ rm ped.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ ls
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ cd ..
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ ls
+1/  2/  3/
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ cd 3
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/3
+$ ls
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/3
+$ touch pad.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/3
+$ ls
+pad.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/3
+$ mv pad.txt ../
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/3
+$ ls
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/3
+$ dc ..
+bash: dc: command not found
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/3
+$ cd ..
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ ls
+1/  2/  3/  pad.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ mv pad.txt 2
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ cd 2
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ ls
+pad.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ rm pad.tx
+rm: cannot remove 'pad.tx': No such file or directory
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ rm pad.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ ls
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11/2
+$ cd ..
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ ls
+1/  2/  3/
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$ touch pad.txt
+
+N E T H   BRUZAC@DESKTOP-3VNC799 MINGW32 ~/Desktop/turma_11
+$
